@@ -72,3 +72,18 @@ int main()
     }
     printf("\nImposto de renda devido R$ %.2f", imposto);
     printf("\nSeu salario sem imposto %.2f", salario - imposto);
+
+float n1, n2, n3, media;
+printf("Informe primeira nota:");
+scanf("%f", &n1);
+printf("Informe segunda nota:");
+scanf("%f", &n2);
+printf("Informe terceira nota:");
+scanf("%f", &n3);
+media = (n1 * 2 + n2 * 3 + n3  * 5) / 10;
+if( media >= 6)
+{
+    printf("\n Aluno aprovado com media %.1f", media);
+} else
+{
+printf("\n Aluno reprovado com media %.1f", media);
