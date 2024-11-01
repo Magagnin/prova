@@ -1,0 +1,74 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <locale.h>
+int main()
+{
+    setlocale(LC_ALL, "Portuguese");
+
+    /*Questão 1 - Escrever um programa em linguagem C para ler um número inteiro com 4
+    dígitos, calcular e escrever se o segundo digito informado é par ou ímpar.
+    int numero, segundo_digito;
+    printf("Informe um numero de 4 digitos:");
+    scanf("%d", &numero);
+    segundo_digito = (numero / 100) % 10;
+    if (segundo_digito % 2 == 0)
+    {
+     printf("O segundo numero %d é par", segundo_digito);
+    }else{
+     printf("O valor do segundo numero %d é ímpar", segundo_digito);
+    }*/
+
+
+
+    /*Um supermercado está com uma promoção para seus clientes e definiu
+    uma tabela de descontos conforme abaixo.
+    float compras, desconto;
+    printf("Informe valor da compra");
+    scanf("%f", &compras);
+    if (compras <= 100)
+    {
+        desconto = compras * 0.95;
+        printf("O valor da compra %.2f com o desconto ficou:", desconto);
+    }
+    else if(compras >= 101 && compras <= 500)
+    {
+        desconto = compras * 0.93;
+        printf("O valor da compra %.2f com o desconto ficou:", desconto);
+    }
+    else if ( compras > 500)
+    {
+        desconto = compras * 0.90;
+        printf("O valor da compra %.2f com o desconto ficou:", desconto);
+    }*/
+
+
+    float salario, imposto;
+    printf("Informe seu salario:");
+    scanf("%f", &salario);
+    if(salario <= 2.112,00)
+    {
+    imposto = 0;
+    }
+    else
+        if(salario <= 2.826,65)
+    {
+    imposto = salario * 0,075 - 158.40;
+    }
+    else
+    if(salario <= 3.751,05)
+    {
+    imposto = salario * 0.15 - 370,40;
+    }
+    else
+    if (salario <= 4.664,68)
+    {
+    imposto = salario * 0,225 - 651,73;
+    }
+    else
+    if (salario >= 4.664,68)
+    {
+    imposto = salario * 0.275 - 884,96;
+    }
+    printf("\nImposto de renda devido R$ %.2f", imposto);
+    printf("\nSeu salario sem imposto %.2f", salario - imposto);
